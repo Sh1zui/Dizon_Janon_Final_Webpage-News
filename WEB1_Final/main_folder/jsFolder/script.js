@@ -195,7 +195,7 @@ const sections = {
   ]
 };
 
-// Load section
+
 const contentArea = document.getElementById("contentArea");
 function loadSection(name) {
   contentArea.innerHTML = "";
@@ -216,7 +216,7 @@ function loadSection(name) {
   showToast(`Loaded ${name} section`);
 }
 
-// Toggle full content
+
 document.addEventListener("click", function (e) {
   if (e.target.classList.contains("see-more")) {
     const section = e.target.dataset.section;
@@ -228,7 +228,7 @@ document.addEventListener("click", function (e) {
   }
 });
 
-// Trending list
+
 const trendingList = document.getElementById("trendingList");
 ["AI Revolution", "Olympics 2025", "Global Summit", "Crypto Crash", "Mars Rover"].forEach(text => {
   const li = document.createElement("li");
@@ -236,7 +236,7 @@ const trendingList = document.getElementById("trendingList");
   trendingList.appendChild(li);
 });
 
-// Nav actions
+
 document.querySelectorAll("nav a").forEach(link => {
   link.addEventListener("click", e => {
     e.preventDefault();
@@ -249,7 +249,7 @@ document.getElementById("themeToggle").addEventListener("click", () => {
   document.body.classList.toggle("dark");
 });
 
-// Live Clock
+
 function updateClock() {
   const now = new Date();
   document.getElementById("liveClock").textContent = now.toLocaleTimeString();
@@ -257,7 +257,7 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
-// Toast
+
 function showToast(message) {
   const toast = document.createElement("div");
   toast.className = "toast";
@@ -266,7 +266,7 @@ function showToast(message) {
   setTimeout(() => toast.remove(), 3000);
 }
 
-// Hamburger toggle
+
 const menuToggle = document.getElementById("menuToggle");
 const navbar = document.getElementById("navbar");
 
@@ -274,7 +274,7 @@ menuToggle.addEventListener("click", () => {
   navbar.classList.toggle("active");
 });
 
-// Load default
+
 loadSection("home");
 
 

@@ -1,4 +1,4 @@
-/* CSS Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +31,7 @@ body {
   overflow: hidden;
 }
 
-/* Header */
+
 header {
   background: var(--accent);
   color: white;
@@ -48,7 +48,7 @@ header {
   cursor: pointer;
 }
 
-/* Nav */
+
 nav {
   background: var(--card);
   padding: 0.5rem 2rem;
@@ -71,7 +71,7 @@ nav a:hover {
   color: var(--accent);
 }
 
-/* Main Layout */
+
 main {
   display: grid;
   grid-template-columns: 5fr 1fr;
@@ -110,7 +110,7 @@ article p {
   font-size: 0.95rem;
 }
 
-/* Aside */
+
 aside h2 {
   margin-bottom: 1rem;
 }
@@ -124,7 +124,7 @@ aside h2 {
   margin-bottom: 0.5rem;
 }
 
-/* Footer */
+
 footer {
   text-align: center;
   padding: 1rem;
@@ -156,7 +156,7 @@ footer {
   100% {opacity: 0;}
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   body {
     overflow: auto; /* allow full scroll on small screens */
@@ -190,7 +190,7 @@ footer {
 
   }
 }
-/* Header update */
+
 header {
   background: var(--accent);
   color: white;
@@ -206,14 +206,13 @@ header {
   align-items: center;
 }
 
-/* Clock repositioning */
+
 #liveClock {
   font-size: 0.9rem;
   color: var(--text); 
    
 }
 
-/* Hamburger menu */
 .hamburger {
   font-size: 1.5rem;
   background: none;
@@ -223,7 +222,7 @@ header {
   cursor: pointer;
 }
 
-/* Nav improvements */
+
 nav {
   background: var(--card);
   padding: 0.5rem 2rem;
@@ -246,7 +245,7 @@ nav a:hover {
   color: var(--accent);
 }
 
-/* Responsive hamburger */
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -268,7 +267,6 @@ nav a:hover {
   }
 }
 
-/* See More link style */
 .see-more {
   color: var(--accent);
   cursor: pointer;

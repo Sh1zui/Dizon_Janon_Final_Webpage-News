@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RealTime News</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="cssFolder/style.css"/>
+</head>
+<body>
+ <header>
+  <h1>RealTime News</h1>
+  <div class="header-right">
+    <time id="liveClock"></time>
+    <button id="themeToggle" aria-label="Toggle Theme">🌓</button>
+    <button id="menuToggle" class="hamburger" aria-label="Toggle Menu">☰</button>
+  </div>
+</header>
+
+<nav id="navbar">
+  <ul>
+    <li><a href="#" data-section="home">Home</a></li>
+    <li><a href="#" data-section="world">World</a></li>
+    <li><a href="#" data-section="tech">Tech</a></li>
+    <li><a href="#" data-section="entertainment">Entertainment</a></li>
+    <li><a href="#" data-section="sports">Sports</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="contentArea"></section>
+
+  <aside>
+    <h2>Trending Now</h2>
+    <ul id="trendingList"></ul>
+  </aside>
+</main>
+
+<footer>
+  <p>&copy; 2025 RealTime News. All rights reserved.</p>
+</footer>
+
+<div id="toastContainer"></div>
+
+  <script src="jsFolder/script.js"></script>
+</body>
+</html>
